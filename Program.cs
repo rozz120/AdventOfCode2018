@@ -7,7 +7,7 @@ namespace Advent_of_code_2018
     {
         static void Main(string[] args)
         {
-            var characterCounts = new Dictionary<char, int>();
+
             int twiceRepeatedLetters = 0;
             int threeTimesRepeatedLetters = 0;
 
@@ -15,7 +15,9 @@ namespace Advent_of_code_2018
 
             foreach (string boxId in boxIds)
             {
+                var characterCounts = new Dictionary<char, int>();
                 var charArray = boxId.ToCharArray();
+
                 foreach (char charcter in charArray)
                 {
                     if (characterCounts.ContainsKey(charcter))
