@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class DayOnePartTwo
 {
     public int total;
-    
+
     public int firstReccuringNumber()
     {
         List<int> checkList = new List<int>();
@@ -966,7 +966,7 @@ public class DayOnePartTwo
 - 26    ,
 - 73113
             };
-            var x = 0;
+        var x = 0;
         while (x == 0)
         {
 
@@ -979,19 +979,12 @@ public class DayOnePartTwo
                     {
                         x = 1;
                         return total;
-                        
-
-
                     }
 
                 }
                 checkList.Add(total);
-
-
-
-
             }
-            
+
         }
         return total;
     }
